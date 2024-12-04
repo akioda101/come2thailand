@@ -1042,28 +1042,7 @@ figcaption {
 
 
 @media screen and (max-width: 768px) {
-    #Ayutthaya {
-        padding: 1.5rem;
-        max-width: 90%;
-    }
 
-    #location-title h2 {
-        font-size: 1.8rem;
-    }
-
-    #image-gallery h3,
-    #location-description h3,
-    #top-activities h3 {
-        font-size: 1.3rem;
-    }
-
-    #location-description p {
-        font-size: 0.9rem;
-    }
-
-    #top-activities li {
-        font-size: 0.9rem;
-    }
 }
 
 
@@ -1127,6 +1106,28 @@ figcaption {
         margin: 6px 6px;
         color:  hsla(0, 0%, 87%, 0.795);
     }
+    #Ayutthaya {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    #location-title h2 {
+        font-size: 1.8rem;
+    }
+
+    #image-gallery h3,
+    #location-description h3,
+    #top-activities h3 {
+        font-size: 1.3rem;
+    }
+
+    #location-description p {
+        font-size: 0.9rem;
+    }
+
+    #top-activities li {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -1145,9 +1146,6 @@ figcaption {
         font-size: 1.1rem;
     }
 
-    h1 {
-        font-size: 3rem;
-    }
 
     p {
         font-size: 1.2rem;
