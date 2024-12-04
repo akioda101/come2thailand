@@ -420,12 +420,6 @@ figcaption {
 
 
 
-@media screen and (max-width: 768px) {
-    .destination-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-}
 
 
 
@@ -503,23 +497,6 @@ figcaption {
     color: var(--primary-color);
 }
 
-
-@media screen and (max-width: 768px) {
-    .event-item {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .event-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    .event-text {
-        padding: 1rem;
-        text-align: center;
-    }
-}
 
 
 
@@ -599,22 +576,6 @@ figcaption {
 }
 
 
-@media screen and (max-width: 768px) {
-    .activity-item {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .activity-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    .activity-text {
-        padding: 1rem;
-        text-align: center;
-    }
-}
 
 
 
@@ -967,7 +928,7 @@ figcaption {
 }
 
 
-
+                            /** MOBILE PHONE OPTIMIZATION **/ 
 
 @media screen and (max-width: 768px) {
     .two-column-container {
@@ -990,66 +951,42 @@ figcaption {
     #about h2 {
         font-size: 24px;
     }
-}
 
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .two-column-container {
+    .event-item {
         flex-direction: column;
-        gap: 2rem;
+        height: auto;
     }
 
-    .column img {
-        max-height: 350px;
+    .event-item img {
+        width: 100%;
+        height: auto;
     }
 
-    #about p {
-        font-size: 18px;
-        width: 90%;
-        margin-left: 0px;
-
+    .event-text {
+        padding: 1rem;
+        text-align: center;
     }
 
-    #about h2 {
-        font-size: 28px;
-    }
-}
-
-
-@media screen and (min-width: 1025px) {
-    .two-column-container {
-        flex-direction: row;
-        gap: 2rem;
+    .destination-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .column img {
-        max-height: 500px;
+    .activity-item {
+        flex-direction: column;
+        height: auto;
     }
 
-    #about p {
-        font-size: 20px;
-        width: 80%;
+    .activity-item img {
+        width: 100%;
+        height: auto;
     }
 
-    #about h2 {
-        font-size: 32px;
+    .activity-text {
+        padding: 1rem;
+        text-align: center;
     }
-}
 
-
-
-
-
-
-@media screen and (max-width: 768px) {
-
-}
-
-
-
-
-
-@media screen and (max-width: 700px) {
     figcaption {
         font-size: 3vw;
     }
@@ -1106,10 +1043,6 @@ figcaption {
         margin: 6px 6px;
         color:  hsla(0, 0%, 87%, 0.795);
     }
-    #Ayutthaya {
-        padding: 1.5rem;
-        max-width: 90%;
-    }
 
     #location-title h2 {
         font-size: 1.8rem;
@@ -1130,44 +1063,30 @@ figcaption {
     }
 }
 
+                            /** TABLET OPTIMIZATION **/ 
 
 
-@media screen and (min-width: 1025px) {
-    #main-gallery-container {
-        margin-top: 60px;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .two-column-container {
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    #gallery-contents {
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 80vw;
+    .column img {
+        max-height: 350px;
     }
 
-    .destination-table {
-        font-size: 1.1rem;
+    #about p {
+        font-size: 18px;
+        width: 90%;
+        margin-left: 0px;
+
     }
 
-
-    p {
-        font-size: 1.2rem;
+    #about h2 {
+        font-size: 28px;
     }
 
-    button {
-        font-size: 1.2rem;
-        padding: 15px 30px;
-    }
-
-    .navbar a {
-        font-size: 20px;
-        margin-left: 5px;
-    }
-
-    footer {
-        padding: 60px;
-    }
-}
-
-
-@media screen and (min-width: 701px) and (max-width: 1024px) {
     #gallery-contents {
         grid-template-columns: 1fr 1fr;
         width: 85vw;
