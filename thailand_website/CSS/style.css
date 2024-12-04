@@ -113,6 +113,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .navbar li {
@@ -126,11 +127,12 @@ p {
     align-items: center;
     padding: 0 12px;
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    color: rgb(209, 209, 209);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(196, 196, 196);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
-    margin-left: 25px;
+    margin-left: 5%;
     height: 2rem;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -147,6 +149,14 @@ p {
 
 }
 
+.navbar h1 {
+    font-size: 35px;
+    position: relative;
+    left: -7%;
+    top: 0px;
+    margin: 6px 6px;
+    color:  hsla(0, 0%, 87%, 0.795);
+}
 
 
 
@@ -482,6 +492,8 @@ figcaption {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--primary-color);
+    border-bottom: 4px solid var(--secondary-bg);
+    padding-bottom: 5px;
 }
 
 
@@ -575,6 +587,8 @@ figcaption {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--primary-color);
+    border-bottom: 4px solid var(--secondary-bg);
+    padding-bottom: 5px;
 }
 
 
@@ -1096,7 +1110,22 @@ figcaption {
 
     .navbar a {
         font-size: 1rem;
-        margin-left: 1px;
+        margin: 0;
+        margin-left: 0px;
+    }
+
+    .navbar ul {
+        margin: 0;
+        margin-left: 0px;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+        position: relative;
+        left: -5px;
+        top: 0px;
+        margin: 6px 6px;
+        color:  hsla(0, 0%, 87%, 0.795);
     }
 }
 
@@ -1131,7 +1160,7 @@ figcaption {
 
     .navbar a {
         font-size: 20px;
-        margin-left: 25px;
+        margin-left: 5px;
     }
 
     footer {
@@ -1166,5 +1195,14 @@ figcaption {
     .navbar a {
         font-size: 18px;
         margin-left: 5px;
+    }
+
+    .navbar h1 {
+        font-size: 27px;
+        position: relative;
+        left: -1%;
+        top: 0px;
+        margin: 6px 6px;
+        color:  hsla(0, 0%, 87%, 0.795);
     }
 }
