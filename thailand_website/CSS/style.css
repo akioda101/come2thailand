@@ -745,27 +745,35 @@ figcaption {
     align-items: center;
     justify-content: center;
     background-color: rgba(209, 209, 209, 0.196);
+    max-width: 90vw;
+    border: 5px solid var(--footer-bg); /* Matches your theme's design */
+
 }
 
 .gallery-scroll {
-    display: flex;
-    overflow-x: hidden;
-    gap: 1rem;
-    padding: 1rem;
-    border: 5px solid var(--footer-bg);
-    scroll-behavior: smooth;
-    width: 80vw;
+    display: flex; /* Creates a horizontal layout for the images */
+    gap: 1rem; /* Adds spacing between images */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling for a better user experience */
+    padding: 1rem; /* Adds padding inside the scrollable area */
+    
+    width: 100%; /* Makes the gallery responsive */
+    max-width: 90%; 
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
+.gallery-scroll::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
 
 .gallery-scroll img {
-    height: 250px;
-    object-fit: cover;
-    flex-shrink: 0;
-    border-radius: 6px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-    border: 2px solid var(--footer-bg);
+    height: 250px; /* Sets a consistent height for images */
+    object-fit: cover; /* Ensures the image scales without distortion */
+    flex-shrink: 0; /* Prevents images from shrinking */
+    border-radius: 6px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
 }
 
 .gallery-scroll img:hover {
