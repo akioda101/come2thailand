@@ -12,11 +12,15 @@
 </head>
 <body>
     <!-- Navigation Section -->
-    <section>
-        <nav class="navbar">
-            <h1 contenteditable>Come<span style="color: hsl(163, 37%, 40%)">2</span>Thailand</h1>
-
-            <ul>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="home.html"><h1>
+                Come<span style="color: hsl(163, 37%, 40%)">2</span>Thailand
+            </h1></a>
+            <button class="hamburger" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="activities.html">Activities</a></li>
@@ -24,7 +28,7 @@
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
 
     <!-- Main Page Section -->
     <section class="page" id="activities">
@@ -141,10 +145,19 @@
         <div class="footer-content">
             <p>&copy; 2024 Come to Thailand. All rights reserved.</p>
             <ul class="footer-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="info.html">About Us</a></li>
+                <li><a href="home.html">             Home</a></li>
+                <li><a href="contact.html">          Contact </a></li>
+                <li><a href="info.html">             About Us </a></li>
             </ul>
             <p class="footer-social">
                 <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="http://www.instagram.com"><i
+                <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="../JS/hamburger_button.js"></script>
+</body>
+</html> 
