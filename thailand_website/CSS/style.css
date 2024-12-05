@@ -1085,11 +1085,9 @@ figcaption {
     }
 
     .navbar h1 {
-        font-size: 20px;
+        font-size: 27px;
         position: relative;
-        left: -5px;
-        top: 0px;
-        margin: 6px 6px;
+        margin: 6px 0px;
         color:  hsla(0, 0%, 87%, 0.795);
     }
 
@@ -1202,11 +1200,7 @@ figcaption {
 
     .navbar h1 {
         font-size: 27px;
-        position: relative;
-        left: -1%;
-        top: 0px;
         margin: 6px 6px;
-        color:  hsla(0, 0%, 87%, 0.795);
     }
 
     .navbar ul {
@@ -1215,7 +1209,7 @@ figcaption {
 }
 
 
-                            /** TABLET OPTIMIZATION **/ 
+                            /** DESKTOP OPTIMIZATION **/ 
 
 
 @media screen and (min-width: 1025px) {
