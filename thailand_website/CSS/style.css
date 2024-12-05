@@ -280,6 +280,43 @@ button:hover {
 
 
 
+#countdown {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 0px 0px;
+    text-align: center;
+    background-color: rgba(5, 5, 5, 0.568);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.countdown-segment {
+    display: inline-block;
+    margin: 0 7px;
+    text-align: center;
+}
+
+.countdown-segment span {
+    display: block;
+}
+
+.countdown-number {
+    font-size: 17px;
+    color: var(--accent-color);
+    font-weight: bold;
+    z-index: 100;
+}
+
+.countdown-label {
+    font-size: 12px;
+    color: var(--primary-color);
+    z-index: 100;
+}
+
+
 
 
 footer {
