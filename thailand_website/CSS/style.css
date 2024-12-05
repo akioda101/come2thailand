@@ -285,20 +285,20 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(33, 33, 33, 0.8); /* Optional: adds background for better visibility */
-    color: var(--primary-color); /* Matches the theme's primary color */
+    background-color: rgba(33, 33, 33, 0.8);
+    color: var(--primary-color);
     padding: 6px 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     border: 2px solid var(--footer-bg);
     border-radius: 8px;
-    width: 90%; /* Makes the container responsive */
-    max-width: 380px; /* Optional: caps the width */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds depth */
+    width: 90%;
+    max-width: 380px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     position: relative;
-    top: 50%; /* Vertically center */
-    left: 50%; /* Horizontally center */
-    transform: translate(-50%, -50%); /* Center with respect to top-left corner */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .countdown-segment {
@@ -746,34 +746,34 @@ figcaption {
     justify-content: center;
     background-color: rgba(209, 209, 209, 0.196);
     max-width: 90vw;
-    border: 5px solid var(--footer-bg); /* Matches your theme's design */
+    border: 5px solid var(--footer-bg);
 
 }
 
 .gallery-scroll {
-    display: flex; /* Creates a horizontal layout for the images */
-    gap: 1rem; /* Adds spacing between images */
-    overflow-x: auto; /* Enables horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth scrolling for a better user experience */
-    padding: 1rem; /* Adds padding inside the scrollable area */
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem;
     
-    width: 100%; /* Makes the gallery responsive */
+    width: 100%;
     max-width: 90%; 
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .gallery-scroll::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
+    display: none;
 }
 
 .gallery-scroll img {
-    height: 250px; /* Sets a consistent height for images */
-    object-fit: cover; /* Ensures the image scales without distortion */
-    flex-shrink: 0; /* Prevents images from shrinking */
-    border-radius: 6px; /* Optional: adds rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
-    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    height: 250px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
 .gallery-scroll img:hover {
