@@ -102,10 +102,12 @@ p {
     align-items: center;
     background-color: var(--footer-bg);
     z-index: 100;
+    border-top: 4px solid var(--footer-bg);
+    border-bottom: 4px solid var(--footer-bg);
 }
 
 .navbar ul {
-    display: flex;
+    display: none;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -1206,4 +1208,20 @@ figcaption {
         margin: 6px 6px;
         color:  hsla(0, 0%, 87%, 0.795);
     }
+
+    .navbar ul {
+        display: flex;
+    }
+}
+
+
+                            /** TABLET OPTIMIZATION **/ 
+
+
+@media screen and (min-width: 1025px) {
+
+    .navbar ul {
+        display: flex;
+    }
+
 }
