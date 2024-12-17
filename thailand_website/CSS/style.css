@@ -173,20 +173,23 @@ p {
     width: 100%;
     text-align: center;
     padding: 1rem 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.719);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     border-top: 2px solid var(--footer-bg);
     border-bottom: 2px solid var(--footer-bg);
+
+
 }
 
 .nav-links.show {
     display: flex;
+
 }
 
 .nav-links li a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     transition: color 0.3s;
 }
 
@@ -203,6 +206,62 @@ p {
     cursor: pointer;
 }
 
+.google_map_container {
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+.map-dropdown {
+    text-align: center;
+    margin: 0 0;
+    width: 95%;
+    max-width: 530px;
+}
+
+.dropdown-toggle {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--primary-color);
+    background-color: var(--footer-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 4%;
+}
+
+.dropdown-toggle:hover {
+    background-color: var(--primary-color);
+    color: var(--hover-text);
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0; /* Initially hidden */
+    background-color: var(--secondary-bg);
+    border: 4px solid var(--footer-bg);
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    margin-top: 10px;
+}
+
+/* When the dropdown is visible */
+.dropdown-content.show {
+    max-height: 500px; /* Adjust height as needed */
+    opacity: 1; /* Fully visible */
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
 
 
 
@@ -1227,6 +1286,7 @@ figcaption {
         max-width: 100%;
     }
     
+
 }
 
                             /** TABLET OPTIMIZATION **/ 
@@ -1306,5 +1366,9 @@ figcaption {
 
     #countdown {
         margin-top: 2%;
+    }
+    .google_map_container {
+        width: 500px;
+        right: -25%;
     }
 }

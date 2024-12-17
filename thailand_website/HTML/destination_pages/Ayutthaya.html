@@ -13,7 +13,7 @@
     <body>
 
 
-        <!-- This is the navigation section  -->
+        <!-- Navigation section  -->
         <header>
             <nav class="navbar" aria-label="Main Navigation">
                 <a href="../home.html"><h1>
@@ -32,7 +32,7 @@
             </nav>
         </header>
 
-        <!-- this is the main page section -->
+        <!--  Main page section -->
         <section class="page" id="#location_page">
 
             <!-- Title Section -->
@@ -40,7 +40,21 @@
                 <h2>Ayutthaya</h2>
                 <h3>Explore Ancient Thailand</h3>
             </div>
-        
+
+            <!-- Dropdown Section -->
+            <div class="map-dropdown">
+                <button class="dropdown-toggle">View Map</button>
+                <div class="dropdown-content">
+
+                    <!-- Google Map Section -->
+                    <div class="google_map_container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989352.3376237869!2d99.33709873334034!3d14.389213523363365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2736f5bfd8f7f%3A0x1019237450c4860!2sPhra%20Nakhon%20Si%20Ayutthaya%2C%20Thailand!5e0!3m2!1sen!2suk!4v1733464602040!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+           <!--   Gallery Section -->
             <div id="image-gallery">
                 <div class="gallery-container">
                     <button class="scroll-btn scroll-left" aria-label="Scroll left"></button>
@@ -52,6 +66,10 @@
                         <img src="../../img/gallery/ayutthaya_5.jpg" alt="Gallery Image 5">
                         <img src="../../img/gallery/ayutthaya_6.jpg" alt="Gallery Image 6">
                         <img src="../../img/gallery/ayutthaya_7.jpg" alt="Gallery Image 7">
+                        <img src="../../img/gallery/ayutthaya_8.jpg" alt="Gallery Image 7">
+                        <img src="../../img/gallery/ayutthaya_9.jpg" alt="Gallery Image 7">
+                        <img src="../../img/gallery/ayutthaya_10.jpg" alt="Gallery Image 7">
+                        <img src="../../img/gallery/ayutthaya_11.jpg" alt="Gallery Image 7">
                     </div>
                     <button class="scroll-btn scroll-right" aria-label="Scroll right"></button>
                 </div>
@@ -80,7 +98,7 @@
         </section>
         
 
-        <!-- This is the footer section  -->
+        <!-- Footer section  -->
         <footer>
             <div class="footer-content">
                 <p>&copy; 2024 Come2Thailand. All rights reserved.</p>
@@ -97,6 +115,7 @@
             </div>
         </footer>
 
+        <script src="../../JS/map_dropdown.js"></script>
         <script src="../../JS/image_enlarge.js"></script>
         <script src="../../JS/gallery_scroll.js"></script>
         <script src="../../JS/hamburger_button.js"></script>
