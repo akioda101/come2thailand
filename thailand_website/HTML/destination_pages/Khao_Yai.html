@@ -42,40 +42,45 @@
 
         <a class="weatherwidget-io" href="https://forecast7.com/en/12d7799d91/khao-yai/" data-label_1="KHAO YAI" data-label_2="WEATHER" data-theme="gray" data-basecolor="#2d3234" >KHAO YAI WEATHER</a>
 
-        <!-- Dropdown Section -->
-        <div class="map-dropdown">
-            <button class="dropdown-toggle">View Map</button>
-            <div class="dropdown-content">
+            <!-- Dropdown Buttons -->
+            <div class="dropdown-section">
+                <!-- View Map Button -->
+                <button class="dropdown-toggle" id="toggle-map">View Map</button>
+            
+                <!-- View Gallery Button -->
+                <button class="dropdown-toggle" id="toggle-gallery">View Gallery</button>
+            </div>
 
+            <div class="dropdown-content" id="map-dropdown">
                 <!-- Google Map Section -->
                 <div class="google_map_container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.0087756828166!2d101.525833447478!3d14.310922855617555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2a495f2143d7%3A0x14b500fc4f22bfc!2sKhao%20Yai%20National%20Park!5e0!3m2!1sen!2suk!4v1733464829934!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                
             </div>
-        </div>
 
         <!-- Gallery Section -->
-        <div id="image-gallery">
-            <div class="gallery-container">
-                <button class="scroll-btn scroll-left" aria-label="Scroll left"></button>
-                <div class="gallery-scroll">
-                    <img src="../../img/gallery/khao_yai_1.jpg" alt="Khao Yai National Park Landscape" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_2.jpg" alt="Wild Elephants in Khao Yai" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_3.jpg" alt="Haew Suwat Waterfall" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_4.jpg" alt="Sunflower Fields" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_5.jpg" alt="Scenic Viewpoints" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_6.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_7.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_8.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_9.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_10.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/khao_yai_11.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
+        <div class="dropdown-content" id="gallery-dropdown">
+            <div id="image-gallery">
+                <div class="gallery-container">
+                    <button class="scroll-btn scroll-left" aria-label="Scroll left"></button>
+                    <div class="gallery-scroll">
+                        <img src="../../img/gallery/khao_yai_1.jpg" alt="Khao Yai National Park Landscape" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_2.jpg" alt="Wild Elephants in Khao Yai" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_3.jpg" alt="Haew Suwat Waterfall" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_4.jpg" alt="Sunflower Fields" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_5.jpg" alt="Scenic Viewpoints" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_6.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_7.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_8.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_9.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_10.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        <img src="../../img/gallery/khao_yai_11.jpg" alt="Palio Village" onerror="this.src='../../img/gallery/load_error.jpg';">
+                    </div>
+                    <button class="scroll-btn scroll-right" aria-label="Scroll right"></button>
                 </div>
-                <button class="scroll-btn scroll-right" aria-label="Scroll right"></button>
             </div>
         </div>
-
+        
         <!-- Description Section -->
         <div id="location-description">
             <h3>About Khao Yai</h3>

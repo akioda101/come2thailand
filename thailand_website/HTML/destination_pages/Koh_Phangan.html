@@ -1,126 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koh Phangan | Come to Thailand</title>
-    <link type="text/css" rel="stylesheet" href="../../CSS/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d085fdf720.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Koh Phangan | Come to Thailand</title>
+        <link type="text/css" rel="stylesheet" href="../../CSS/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d085fdf720.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
 
-    <!-- Navigation Section -->
-    <header>
-        <nav class="navbar" aria-label="Main Navigation">
-            <a href="../home.html"><h1>
-                Come<span style="color: hsl(163, 37%, 40%)">2</span>Thailand
-            </h1></a>
-            <button class="hamburger" aria-label="Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="../destinations.html">Destinations</a></li>
-                <li><a href="../activities.html">Activities</a></li>
-                <li><a href="../events.html">Events</a></li>
-                <li><a href="../gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- Navigation Section -->
+        <header>
+            <nav class="navbar" aria-label="Main Navigation">
+                <a href="../home.html"><h1>
+                    Come<span style="color: hsl(163, 37%, 40%)">2</span>Thailand
+                </h1></a>
+                <button class="hamburger" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../destinations.html">Destinations</a></li>
+                    <li><a href="../activities.html">Activities</a></li>
+                    <li><a href="../events.html">Events</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Main Page Section -->
-    <section class="page" id="#location_page">
+        <!-- Main Page Section -->
+        <section class="page" id="#location_page">
 
-        <!-- Title Section -->
-        <div id="location-title">
-            <h2>Koh Phangan</h2>
-            <h3>The Island of Full Moon Parties and Tranquil Beaches</h3>
-        </div>
-
-
-        <a class="weatherwidget-io" href="https://forecast7.com/en/10d1099d83/ko-tao/" data-label_1="KO PHANGAN" data-label_2="WEATHER" data-theme="gray" data-basecolor="#2d3234" >KO TAO WEATHER</a>
+            <!-- Title Section -->
+            <div id="location-title">
+                <h2>Koh Phangan</h2>
+                <h3>The Island of Full Moon Parties and Tranquil Beaches</h3>
+            </div>
 
 
-        <!-- Dropdown Section -->
-        <div class="map-dropdown">
-            <button class="dropdown-toggle">View Map</button>
-            <div class="dropdown-content">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/10d1099d83/ko-tao/" data-label_1="KO PHANGAN" data-label_2="WEATHER" data-theme="gray" data-basecolor="#2d3234" >KO TAO WEATHER</a>
 
+            <!-- Dropdown Buttons -->
+            <div class="dropdown-section">
+                <!-- View Map Button -->
+                <button class="dropdown-toggle" id="toggle-map">View Map</button>
+            
+                <!-- View Gallery Button -->
+                <button class="dropdown-toggle" id="toggle-gallery">View Gallery</button>
+            </div>
+
+            <div class="dropdown-content" id="map-dropdown">
                 <!-- Google Map Section -->
                 <div class="google_map_container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62917.8682068159!2d99.97991963866856!3d9.734967171089695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054fd96fa0377ef%3A0xd3fd8d1a5e79affe!2sKo%20Pha%20Ngan!5e0!3m2!1sen!2suk!4v1733464898858!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                
             </div>
-        </div>
 
-        <!-- Gallery Section -->
-        <div id="image-gallery">
-            <div class="gallery-container">
-                <button class="scroll-btn scroll-left" aria-label="Scroll left"></button>
-                <div class="gallery-scroll">
-                    <img src="../../img/gallery/koh_phangan_1.jpg" alt="Haad Rin Beach" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_2.jpg" alt="Full Moon Party" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_4.jpg" alt="Thong Sala Night Market" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_5.jpg" alt="Phaeng Waterfall" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_6.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_7.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_8.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_9.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_10.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_12.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
-                    <img src="../../img/gallery/koh_phangan_13.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
+            <!-- Gallery Section -->
+            <div class="dropdown-content" id="gallery-dropdown">
+                <div id="image-gallery">
+                    <div class="gallery-container">
+                        <button class="scroll-btn scroll-left" aria-label="Scroll left"></button>
+                        <div class="gallery-scroll">
+                            <img src="../../img/gallery/koh_phangan_1.jpg" alt="Haad Rin Beach" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_2.jpg" alt="Full Moon Party" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_4.jpg" alt="Thong Sala Night Market" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_5.jpg" alt="Phaeng Waterfall" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_6.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_7.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_8.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_9.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_10.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_12.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
+                            <img src="../../img/gallery/koh_phangan_13.jpg" alt="Wat Phu Khao Noi Temple" onerror="this.src='../../img/gallery/load_error.jpg';">
+                        </div>
+                        <button class="scroll-btn scroll-right" aria-label="Scroll right"></button>
+                    </div>
                 </div>
-                <button class="scroll-btn scroll-right" aria-label="Scroll right"></button>
             </div>
-        </div>
+            
+            <!-- Description Section -->
+            <div id="location-description">
+                <h3>About Koh Phangan</h3>
+                <p>
+                    Koh Phangan is a lush tropical island located in the Gulf of Thailand, famous for its monthly Full Moon Party. Beyond the vibrant nightlife, the island offers serene beaches, dense jungles, and a rich cultural heritage. Visitors can enjoy a mix of relaxation and adventure, from yoga retreats and meditation centers to hiking trails and snorkeling spots. Koh Phangan's diverse attractions make it a unique destination for all types of travelers.
+                </p>
+            </div>
 
-        <!-- Description Section -->
-        <div id="location-description">
-            <h3>About Koh Phangan</h3>
-            <p>
-                Koh Phangan is a lush tropical island located in the Gulf of Thailand, famous for its monthly Full Moon Party. Beyond the vibrant nightlife, the island offers serene beaches, dense jungles, and a rich cultural heritage. Visitors can enjoy a mix of relaxation and adventure, from yoga retreats and meditation centers to hiking trails and snorkeling spots. Koh Phangan's diverse attractions make it a unique destination for all types of travelers.
-            </p>
-        </div>
+            <!-- Activities and Events Section -->
+            <div id="top-activities">
+                <h3>Top Rated Activities & Events</h3>
+                <ul>
+                    <li>Experience the world-famous Full Moon Party on Haad Rin Beach.</li>
+                    <li>Relax on the secluded sands of Bottle Beach.</li>
+                    <li>Explore the island's interior by hiking to Phaeng Waterfall.</li>
+                    <li>Visit Thong Sala Night Market for local food and crafts.</li>
+                    <li>Join a yoga or meditation retreat in the tranquil north.</li>
+                </ul>
+            </div>
 
-        <!-- Activities and Events Section -->
-        <div id="top-activities">
-            <h3>Top Rated Activities & Events</h3>
-            <ul>
-                <li>Experience the world-famous Full Moon Party on Haad Rin Beach.</li>
-                <li>Relax on the secluded sands of Bottle Beach.</li>
-                <li>Explore the island's interior by hiking to Phaeng Waterfall.</li>
-                <li>Visit Thong Sala Night Market for local food and crafts.</li>
-                <li>Join a yoga or meditation retreat in the tranquil north.</li>
-            </ul>
-        </div>
+        </section>
 
-    </section>
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Come2Thailand. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../info.html">Info</a></li>
+                </ul>
+                <p class="footer-social">
+                    <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                </p>
+            </div>
+        </footer>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Come2Thailand. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../info.html">Info</a></li>
-            </ul>
-            <p class="footer-social">
-                <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                <a href="http://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
-            </p>
-        </div>
-    </footer>
-
-    <script src="../../JS/weather_widget.js"></script>
-    <script src="../../JS/map_dropdown.js"></script>
-    <script src="../../JS/image_enlarge.js"></script>
-    <script src="../../JS/gallery_scroll.js"></script>
-    <script src="../../JS/hamburger_button.js"></script>
-</body>
+        <script src="../../JS/weather_widget.js"></script>
+        <script src="../../JS/map_dropdown.js"></script>
+        <script src="../../JS/image_enlarge.js"></script>
+        <script src="../../JS/gallery_scroll.js"></script>
+        <script src="../../JS/hamburger_button.js"></script>
+    </body>
 </html>

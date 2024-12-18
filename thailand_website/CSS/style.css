@@ -233,11 +233,11 @@ p {
     margin-bottom: 1%;
 }
 
-.map-dropdown {
-    text-align: center;
-    margin: 0 0;
-    width: 95%;
-    max-width: 530px;
+.dropdown-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .dropdown-toggle {
@@ -251,7 +251,6 @@ p {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-bottom: 4%;
 }
 
 .dropdown-toggle:hover {
@@ -259,31 +258,35 @@ p {
     color: var(--hover-text);
 }
 
+
+
 .dropdown-content {
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
-    opacity: 0; /* Initially hidden */
     background-color: var(--secondary-bg);
     border: 4px solid var(--footer-bg);
     border-radius: 2px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.dropdown-content iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-    margin-top: 10px;
-}
 
-/* When the dropdown is visible */
-.dropdown-content.show {
-    max-height: 500px; /* Adjust height as needed */
-    opacity: 1; /* Fully visible */
+/* Map-specific styles */
+#map-dropdown.show {
+    max-height: 490px; /* Adjust based on the map content */
+    max-width: 97%;
+    opacity: 1;
     transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
 }
 
+/* Gallery-specific styles */
+#gallery-dropdown.show {
+    max-height: 320px; /* Adjust based on the gallery content */
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+    overflow: hidden; /* Prevents images from overflowing */
+}
 
 
 
@@ -831,18 +834,15 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(209, 209, 209, 0.196);
     max-width: 90vw;
-    border: 5px solid var(--footer-bg);
-
 }
+
 
 .gallery-scroll {
     display: flex;
     gap: 1rem;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 1rem;
     max-width: 100%;
     scrollbar-width: none;
     -ms-overflow-style: none;
