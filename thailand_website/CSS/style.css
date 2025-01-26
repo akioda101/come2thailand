@@ -20,11 +20,11 @@
 }
 
 html, body {
-    margin: 0;           /* Remove margins */
-    padding: 0;          /* Remove padding */
-    width: 100%;         /* Ensure full viewport width */
-    height: 100%;        /* Ensure full viewport height */
-    overflow-x: hidden;  /* Prevent horizontal scrolling */
+    margin: 0;          
+    padding: 0;         
+    width: 100%;        
+    height: 100%;       
+    overflow-x: hidden; 
 }
 
 body * {
@@ -69,7 +69,6 @@ h1, h2, h3 {
 .weatherwidget-io {
     position: relative;
     width: 94%;
-    min-height: 216px;
     border: 4px solid var(--footer-bg);
     margin-bottom: 20px;
     overflow: hidden;
@@ -77,6 +76,7 @@ h1, h2, h3 {
 
 .page {
     position: relative;
+    padding: 4% 0% 2% 0%;
     background-color: rgba(41, 41, 41, 0.802);
     border-radius: 0px;
     margin: 0px auto;
@@ -87,8 +87,8 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box; /* Include padding in the element's width */
-    overflow: hidden; /* Prevent content from overflowing */
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 p {
@@ -187,7 +187,7 @@ p {
 .nav-links {
     display: none;
     flex-direction: row;
-    background-color: var(--footer-bg);
+    background-color: rgba(33, 33, 33, 0.9);
     position: absolute;
     top: 100%;
     right: 0;
@@ -203,7 +203,6 @@ p {
 
 .nav-links.show {
     display: flex;
-
 }
 
 .nav-links li a {
@@ -272,20 +271,20 @@ p {
 }
 
 
-/* Map-specific styles */
+
 #map-dropdown.show {
-    max-height: 490px; /* Adjust based on the map content */
+    max-height: 490px;
     max-width: 97%;
     opacity: 1;
     transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
 }
 
-/* Gallery-specific styles */
+
 #gallery-dropdown.show {
-    max-height: 320px; /* Adjust based on the gallery content */
+    max-height: 320px;
     opacity: 1;
     transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
-    overflow: hidden; /* Prevents images from overflowing */
+    overflow: hidden;
 }
 
 
@@ -755,25 +754,9 @@ figcaption {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #location_page {
-    padding: 2rem;
-    margin: 20px auto;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     max-width: 80%;
     background-color: var(--secondary-bg);
     color: var(--primary-color);
@@ -785,20 +768,20 @@ figcaption {
 }
 
 #location-title {
-    width: 90%; /* Ensure it doesn't exceed the viewport */
-    max-width: 90%; /* Prevent overflow */
-    margin: 0 auto; /* Center it */
-    padding-top: 3rem;
-    box-sizing: border-box; /* Include padding in the element's width */
-    overflow: hidden; /* Prevent content from overflowing */
-    text-align: center; /* Center-align text */
+    position: relative;
+    bottom: .5rem;
+    width: 90%;
+    max-width: 90%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
 }
 
 #location-title h2, 
 #location-title h3 {
-    max-width: 100%; /* Prevent text from causing overflow */
-    word-wrap: break-word; /* Break long words */
-    margin: 0 auto; /* Center-align */
+    max-width: 100%;
+    word-wrap: break-word;
+    margin: 0 auto;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
 }
@@ -999,43 +982,53 @@ figcaption {
 
 
 
-#top-activities {
+.checklist {
     margin: 2rem 0;
     max-width: 87vw;
 
 }
 
-#top-activities h3 {
+.checklist h3 {
     font-size: 1.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
     text-align: center;
 }
 
-#top-activities ul {
+.checklist ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-#top-activities li {
+.checklist li {
     font-size: 1rem;
     color: var(--primary-color);
     margin: 0.5rem 0;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#top-activities li:hover {
+.checklist li:hover {
     background-color: rgba(255, 255, 255, 0.15);
     transform: scale(1.02);
 }
 
 
+.checklist input[type="checkbox"] {
+    position: absolute;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 2rem;
+}
 
+.checklist input[type="checkbox"]:checked {
+    color: var(--accent-color);
+}
 
 
 #about {
@@ -1250,7 +1243,7 @@ figcaption {
     .nav-links.show {
         display: flex;
         flex-direction: column;
-        background-color: var(--footer-bg);
+        background-color: rgba(33, 33, 33, 0.98);
         position: absolute;
         top: 100%;
         right: 0;
@@ -1259,6 +1252,13 @@ figcaption {
         padding: 1rem 0;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
+
+    .nav-links.show a {
+        justify-content: center;
+        border-bottom: 3px solid rgba(90, 90, 90, 0.61);
+        width: 80vw;
+    }
+
 
     .nav-links li {
         margin: 1rem 0;
@@ -1269,25 +1269,25 @@ figcaption {
     }
 
     #location-title {
-        padding: 0.5rem; /* Reduce padding */
+        padding: 0.5rem;
         text-align: center;
         max-width: 100%;
     }
 
     #location-title h2 {
-        font-size: 2.3rem; /* Adjust font size */
-        line-height: 1.2; /* Adjust line height */
+        font-size: 2.3rem;
+        line-height: 1.2;
     }
 
     #location-title h3 {
-        font-size: 1.2rem; /* Adjust font size */
+        font-size: 1.2rem;
         padding-bottom: 0;
     }
 
 
     #image-gallery h3,
     #location-description h3,
-    #top-activities h3 {
+    .checklist h3 {
         font-size: 1.3rem;
     }
 
@@ -1295,7 +1295,7 @@ figcaption {
         font-size: 0.9rem;
     }
 
-    #top-activities li {
+    .checklist li {
         font-size: 0.9rem;
     }
 
@@ -1309,6 +1309,20 @@ figcaption {
         max-width: 100%;
     }
     
+    .dropdown-section {
+        display: flex;
+        flex-direction: column; /* Change from row to column */
+        justify-content: center;
+        align-items: center; /* Center the buttons horizontally */
+        gap: 10px;
+        margin: 20px 0;
+        width: 75%;
+    }
+
+    .dropdown-toggle {
+        width: 85%;
+    }
+
 
 }
 
@@ -1394,4 +1408,5 @@ figcaption {
         width: 500px;
         right: -25%;
     }
+    
 }

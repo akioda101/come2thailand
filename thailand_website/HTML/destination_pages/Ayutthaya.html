@@ -50,6 +50,7 @@
             
                 <!-- View Gallery Button -->
                 <button class="dropdown-toggle" id="toggle-gallery">View Gallery</button>
+
             </div>
 
                     <!-- Google Map Section -->
@@ -85,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Description Section -->
             <div id="location-description">
                 <h3>About Ayutthaya</h3>
@@ -95,16 +96,18 @@
             </div>
         
             <!-- Activities and Events Section -->
-            <div id="top-activities">
-                <h3>Top Rated Activities & Events</h3>
+            <section class="checklist">
+            <h3>Top Rated Activities & Events</h3>
                 <ul>
-                    <li>Take a cycling tour through the ancient ruins.</li>
-                    <li>Visit Bang Pa-In Royal Palace for its stunning architecture.</li>
-                    <li>Attend a traditional Thai puppet performance.</li>
-                    <li>Explore the historic temples, including Wat Chaiwatthanaram and Wat Mahathat.</li>
-                    <li>Enjoy a sunset boat cruise around Ayutthaya's rivers and temples.</li>
+                    <li><input type="checkbox" id="activity1" class="checklist-item">Take a cycling tour through the ancient ruins.</li>
+                    <li><input type="checkbox" id="activity2" class="checklist-item">Visit Bang Pa-In Royal Palace for its stunning architecture.</li>
+                    <li><input type="checkbox" id="activity3" class="checklist-item">Attend a traditional Thai puppet performance.</li>
+                    <li><input type="checkbox" id="activity4" class="checklist-item">Explore the historic temples, including Wat Chaiwatthanaram and Wat Mahathat.</li>
+                    <li><input type="checkbox" id="activity5" class="checklist-item">Enjoy a sunset boat cruise around Ayutthaya's rivers and temples.</li>
                 </ul>
-            </div>
+                <input type="text" id="new-item-text" placeholder="Add new item">
+                <button id="add-item-button">Add Item</button>
+            </section>
         
         </section>
         
@@ -131,5 +134,6 @@
         <script src="../../JS/image_enlarge.js"></script>
         <script src="../../JS/gallery_scroll.js"></script>
         <script src="../../JS/hamburger_button.js"></script>
+        <script src="../../JS/checklist.js"></script>
     </body>
 </html> 

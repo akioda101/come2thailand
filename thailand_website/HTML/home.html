@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d085fdf720.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
     </head>
     <body>
         <!-- Navigation Section -->
@@ -87,5 +88,16 @@
         </footer>
         <script src="../JS/countdown.js"></script>
         <script src="../JS/hamburger_button.js"></script>
+        <script>
+            // Check if a UUID already exists in local storage
+            let userId = localStorage.getItem('userId');
+            if (!userId) {
+                // Generate a new UUID
+                userId = uuid.v4();
+                // Store it in local storage
+                localStorage.setItem('userId', userId);
+            }
+            console.log('User ID:', userId);
+        </script>
     </body>
 </html>
